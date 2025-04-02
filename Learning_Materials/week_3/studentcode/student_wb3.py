@@ -83,7 +83,7 @@ class BestFirstSearch(SingleMemberSearch):
 
         # ====> insert your pseudo-code and code below here
         if self.open_list:
-            self.open_list.sort( key = lambda instance : instance.quality)
+            self.open_list.sort(key = lambda instance : instance.quality)
             return self.open_list.pop(0)
         else:
             return None
@@ -110,96 +110,12 @@ class AStarSearch(SingleMemberSearch):
 
         # ====> insert your pseudo-code and code below here
         if self.open_list:
-            self.open_list.sort( key = lambda instance : instance.quality)
+            self.open_list.sort( key = lambda instance : instance.quality +  + len(instance.variable_values))
             return self.open_list.pop(0)
         else:
             return None
         # <==== insert your pseudo-code and code above here
         return next_soln
-wall_colour= 0.0
-hole_colour = 1.0
-
-def create_maze_breaks_depthfirst():
-    # ====> insert your code below here
-    #remember to comment out any mention of show_maze() before you submit your work
-    maze = Maze(mazefile="maze.txt")
-    maze.contents[4][3] = hole_colour
-    maze.contents[2][11] = hole_colour
-    maze.contents[7][14] = hole_colour
-    #maze.show_maze()
-    # <==== insert your code above here
-
-#create_maze_breaks_depthfirst()
-wall_colour= 0.0
-hole_colour = 1.0
-
-def create_maze_breaks_depthfirst():
-    # ====> insert your code below here
-    #remember to comment out any mention of show_maze() before you submit your work
-    maze = Maze(mazefile="maze.txt")
-    maze.contents[4][3] = hole_colour
-    maze.contents[2][11] = hole_colour
-    maze.contents[7][14] = hole_colour
-    maze.save_to_txt("maze-breaks-depth.txt")
-    #maze.show_maze()
-    # <==== insert your code above here
-
-#create_maze_breaks_depthfirst()
-wall_colour= 0.0
-hole_colour = 1.0
-
-def create_maze_breaks_depthfirst():
-    # ====> insert your code below here
-    #remember to comment out any mention of show_maze() before you submit your work
-    maze = Maze(mazefile="maze.txt")
-    maze.contents[4][3] = hole_colour
-    maze.contents[4][5] = hole_colour
-    maze.contents[2][11] = hole_colour
-    maze.contents[7][14] = hole_colour
-    maze.contents[8][13] = hole_colour
-    maze.contents[19][18] = hole_colour
-    maze.save_to_txt("maze-breaks-depth.txt")
-    #maze.show_maze()
-    # <==== insert your code above here
-
-#create_maze_breaks_depthfirst()
-wall_colour= 0.0
-hole_colour = 1.0
-
-def create_maze_breaks_depthfirst():
-    # ====> insert your code below here
-    #remember to comment out any mention of show_maze() before you submit your work
-    maze = Maze(mazefile="maze.txt")
-    maze.contents[4][3] = hole_colour
-    maze.contents[4][5] = hole_colour
-    maze.contents[2][11] = hole_colour
-    maze.contents[7][14] = hole_colour
-    maze.contents[8][13] = hole_colour
-    maze.contents[19][18] = hole_colour
-    maze.contents[19][12] = hole_colour
-    maze.save_to_txt("maze-breaks-depth.txt")
-    #maze.show_maze()
-    # <==== insert your code above here
-
-#create_maze_breaks_depthfirst()
-wall_colour= 0.0
-hole_colour = 1.0
-
-def create_maze_breaks_depthfirst():
-    # ====> insert your code below here
-    #remember to comment out any mention of show_maze() before you submit your work
-    maze = Maze(mazefile="maze.txt")
-    maze.contents[4][5] = hole_colour
-    maze.contents[2][11] = hole_colour
-    maze.contents[7][14] = hole_colour
-    maze.contents[8][13] = hole_colour
-    maze.contents[19][18] = hole_colour
-    maze.contents[19][12] = hole_colour
-    maze.save_to_txt("maze-breaks-depth.txt")
-    #maze.show_maze()
-    # <==== insert your code above here
-
-#create_maze_breaks_depthfirst()
 wall_colour= 0.0
 hole_colour = 1.0
 
@@ -218,31 +134,6 @@ def create_maze_breaks_depthfirst():
     # <==== insert your code above here
 
 #create_maze_breaks_depthfirst()
-
-def create_maze_depth_better():
-    # ====> insert your code below here
-    #remember to comment out any mention of show_maze() before you submit your work
-    maze = Maze(mazefile="maze.txt")
-    maze.contents[8][13] = hole_colour
-    maze.contents[19][12] = hole_colour
-    maze.contents[6][17] = wall_colour
-    maze.save_to_txt("maze-depth-better.txt")
-    #maze.show_maze()
-    # <==== insert your code above here
-
-#create_maze_depth_better()
-
-def create_maze_depth_better():
-    # ====> insert your code below here
-    #remember to comment out any mention of show_maze() before you submit your work
-    maze = Maze(mazefile="maze.txt")
-    maze.contents[8][13] = hole_colour
-    maze.contents[6][17] = wall_colour
-    maze.save_to_txt("maze-depth-better.txt")
-    #maze.show_maze()
-    # <==== insert your code above here
-
-#create_maze_depth_better()
 
 def create_maze_depth_better():
     # ====> insert your code below here
