@@ -142,20 +142,6 @@ def create_maze_depth_better():
     maze.contents[8][13] = hole_colour
     maze.contents[6][17] = wall_colour
     maze.contents[10][13] = wall_colour
-    maze.contents[9][14] = hole_colour
-    maze.save_to_txt("maze-depth-better.txt")
-    #maze.show_maze()
-    # <==== insert your code above here
-
-#create_maze_depth_better()
-
-def create_maze_depth_better():
-    # ====> insert your code below here
-    #remember to comment out any mention of show_maze() before you submit your work
-    maze = Maze(mazefile="maze.txt")
-    maze.contents[8][13] = hole_colour
-    maze.contents[6][17] = wall_colour
-    maze.contents[10][13] = wall_colour
     #maze.contents[9][14] = hole_colour
     maze.save_to_txt("maze-depth-better.txt")
     #maze.show_maze()
